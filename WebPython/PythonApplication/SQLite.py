@@ -22,18 +22,18 @@ import sqlite3
 #conn.close()
 
 
-#查询记录 
-#只要搞清楚Connection和Cursor对象，打开后一定记得关闭
-conn = sqlite3.connect('test.db')
-cursor = conn.cursor()
-# 执行查询语句:
-cursor.execute('select * from user where id=?', ('1',))
+##查询记录 
+##只要搞清楚Connection和Cursor对象，打开后一定记得关闭
+#conn = sqlite3.connect('test.db')
+#cursor = conn.cursor()
+## 执行查询语句:
+#cursor.execute('select * from user where id=?', ('1',))
 
-# 获得查询结果集:
-values = cursor.fetchall()
-values
-cursor.close()
-conn.close()
+## 获得查询结果集:
+#values = cursor.fetchall()
+#values
+#cursor.close()
+#conn.close()
 
 
 
